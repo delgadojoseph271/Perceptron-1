@@ -34,5 +34,7 @@
 # **6. Siguiente Pasos**
 
 # **7. Registro Cronologico**
-### [fecha: 11/30/2024]
+### [fecha: 11/30/2024]  [fecha finalizacion: 12/01/2024]
 - creacion de la capa de entrada
+### [fecha: 12/01/2024]
+- testo de la capa
