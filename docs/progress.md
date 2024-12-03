@@ -30,7 +30,7 @@
 
 # **4. Problemas y Soluciones**
 - al momento de crear las capas se hace inviable porque no se crean por separdo pero son dependientes una de otras
-    - cree una sola clase donde se defina todo el modelo e una variable
+    - cree una sola clase modelo donde se gestione las capas y haga las conexiones neuronales
 
 # **5. Notas de Aprendizaje**
 - al parecer hay forma de normalizaicon de datos aunque no indague mucho es bueno saberlo para la parte del entrenamiento(eso sera problema de otro dia)
@@ -45,5 +45,8 @@
 # **7. Registro Cronologico**
 ### [fecha: 11/30/2024]  [fecha finalizacion: 12/01/2024]
 - creacion de la capa de entrada
-### [fecha: 12/01/2024]
+### [ fecha: 01/12/2024 ] [fecha finalizacion: 02/12/2024]
 - testo de las capas
+### [ fecha: 03/12/2024 ] [fecha finalizacion: 03/12/2024]
+- ajuste de la logica de manejo de capas y pesos
+
