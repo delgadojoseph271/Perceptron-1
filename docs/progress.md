@@ -35,6 +35,8 @@
 
 # **5. Notas de Aprendizaje**
 - al parecer hay forma de normalizaicon de datos aunque no indague mucho es bueno saberlo para la parte del entrenamiento(eso sera problema de otro dia)
+- en el propagacion lo unico que cambian son las activaciones de la neuronas mientras que en la retropropagacion si se cambian los pesos y sesgos del modelo
+- funciones de activacion punto a punto y dependientes
 
 - Al pareccer todos los pesos son aleatorios aletorios, lo deduces facil aunque no sabia que habia distintas formas de inicializacion, **¿las distintas maneras de inicializar los pesos aleatorios afectaran en la precision del modelo?**
 - Respuesta:
@@ -42,6 +44,7 @@
 
 # **6. Siguiente Pasos**
 - testear el correcto funcionamiento de las capas e integracion entre ellas 
+- crear el agoritmo de aprendizaje de la red
 
 # **7. Registro Cronologico**
 ### [fecha: 11/30/2024]  [fecha finalizacion: 12/01/2024]
@@ -50,6 +53,8 @@
 - testo de las capas
 ### [ fecha: 03/12/2024 ] [fecha finalizacion: 03/12/2024]
 - ajuste de la logica de manejo de capas y pesos
-### [ fecha: 03/12/2024 ] [fecha finalizacion: 03/12/2024]
-- creacion de la propagacion de las neuronas
+### [ fecha: 03/12/2024 ] [ fecha finalizacion: 06/12/2024]
+- creacion de la propagacion de las neuronas y testeo 
+## [ fecha: 06/12/2024] [ fecha finalizacion: 06/12/2024]
+- creacion de las funciones de activacion y testeo 
 
