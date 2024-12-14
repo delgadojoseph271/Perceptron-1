@@ -26,6 +26,7 @@
 - decidi numpy para mayor optimizacion al trabajar con matrices y generar los pesos
 - dividi el codigo en modulos para mayor legibilidad y escalabilidad. 
 - al momento de inicializar los pesos aleatorios me decante por una **inicializacion Uniforme** con un rango de [0,1].
+- utilizare mini-batches para el entrenamiento dek modelo
 
 
 # **4. Problemas y Soluciones**
@@ -39,6 +40,10 @@
 - funciones de activacion punto a punto y dependientes
 
 - Al pareccer todos los pesos son aleatorios aletorios, lo deduces facil aunque no sabia que habia distintas formas de inicializacion, **¿las distintas maneras de inicializar los pesos aleatorios afectaran en la precision del modelo?**
+
+- las distintas tecnicas de entrenamiento de un modelo, como batch completo, Mini-batch, estocastico sus ventajas y desventajas
+
+
 - Respuesta:
     si si luego lo veremos 
 
@@ -55,6 +60,6 @@
 - ajuste de la logica de manejo de capas y pesos
 ### [ fecha: 03/12/2024 ] [ fecha finalizacion: 06/12/2024]
 - creacion de la propagacion de las neuronas y testeo 
-## [ fecha: 06/12/2024] [ fecha finalizacion: 06/12/2024]
+### [ fecha: 06/12/2024] [ fecha finalizacion: 06/12/2024]
 - creacion de las funciones de activacion y testeo 
 

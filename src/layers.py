@@ -68,7 +68,7 @@ class Modelo:
             self.capas[-1].inicializar_pesos()
         self.capas.append(nueva_capa)
 
-    def entrenar(self):
+    def entrenar(self, x_train, y_train, x_test, y_test, epocas):
 
         pass
 
