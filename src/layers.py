@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import activation
 from forward import propagacion
+from utils import hacer_minibatches
 
 class Neuronas:
     def __init__(self, valor = 0) -> None:
@@ -69,8 +70,11 @@ class Modelo:
         self.capas.append(nueva_capa)
 
     def entrenar(self, x_train, y_train, x_test, y_test, epocas):
-
-        pass
+        batches= 32
+        x_train,y_train = hacer_minibatches(x_train,y_train, batches)
+        for i in range(epocas):
+            
+            pass
 
 # Ejemplo de uso
 # modelo = Modelo()

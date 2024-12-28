@@ -98,6 +98,5 @@
 - creacion de la propagacion de las neuronas y testeo 
 ### [ fecha: 06/12/2024] [ fecha finalizacion: 06/12/2024 ]
 - creacion de las funciones de activacion y testeo 
-## [ fecha: 06/12/2024 ] [ fecha finalizacion: 06/12/2024 ]
-
-
+## [ fecha: 27/12/2024 ] [ fecha finalizacion: 27/12/2024 ]
+- creamos la funcion del calculo del costo y mini-batches
