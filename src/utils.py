@@ -14,6 +14,6 @@ def calcular_costo(predicciones, etiqueta):
     predicciones = predicciones
     esperado = np.array([0 if not i == etiqueta else 1 for i in range(len(predicciones)) ])
     costo = np.mean(np.square(predicciones - esperado))
-    print(predicciones,esperado)
+    # print(predicciones,esperado)  
     return costo
-print(calcular_costo( np.array([random.random() for _ in range(10)]) , 2))
+# print(calcular_costo( np.array([random.random() for _ in range(10)]) , 2))

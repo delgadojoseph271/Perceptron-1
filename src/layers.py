@@ -2,18 +2,18 @@ import numpy as np
 import pandas as pd
 import activation
 from forward import propagacion
-from utils import hacer_minibatches
+from utils import hacer_minibatches, calcular_costo
 
-class Neuronas:
-    def __init__(self, valor = 0) -> None:
-        self.activacion = valor
-        self.sesgo = 0
+# class Neuronas:
+#     def __init__(self, valor = 0) -> None:
+#         self.activacion = valor
+#         self.sesgo = 0
 
-    def cambiar_activacion(self,valor):
-        self.activacion = valor
-        pass
-    def cambiar_sesgo(self):
-        self.sesgo = 0
+#     def cambiar_activacion(self,valor):
+#         self.activacion = valor
+#         pass
+#     def cambiar_sesgo(self):
+#         self.sesgo = 0
 
 class Capa:
     def __init__(self, neuronas=0,funcion_activacion = None):
@@ -33,6 +33,8 @@ class Capa:
         if self.funcion_activacion:
             return self.funcion_activacion(x)
         return x
+    
+
 
     def retornar_cantidad_neuronas(self):
         return len(self.neuronas)  # Calcula la cantidad de neuronas
@@ -61,6 +63,12 @@ class Modelo:
     def __init__(self):
         self.capas = []
         
+    def propagar_entrada(self, datos):
+        if len(datos) == self.capas[0].retornar_cantidad_neuronas():
+            self.capas[0].pesos = datos
+            propagacion(self.capas)
+            return self.capas[-1]
+            
     def agregar_capa(self, neuronas,funcion):
         nueva_capa = Capa(neuronas=neuronas,funcion_activacion=funcion)
         if self.capas:
@@ -73,8 +81,13 @@ class Modelo:
         batches= 32
         x_train,y_train = hacer_minibatches(x_train,y_train, batches)
         for i in range(epocas):
-            
-            pass
+            for batches in x_train:
+                costo = np.mean(np.array(
+                        [ calcular_costo(self.propagar_entrada(dato),y_train) 
+                        for dato in batches] # propaga el dato y saca el costo de cada uno 
+                            )
+                        ) # Saca el costo de cada mini-batch
+                
 
 # Ejemplo de uso
 # modelo = Modelo()
